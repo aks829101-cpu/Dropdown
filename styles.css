@@ -1,0 +1,51 @@
+html {background-color: bisque;}
+
+.site-nav {
+    background-color: lightblue;}
+
+    .site-links{
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .site-link {
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+
+    .site-link:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .dropdown {
+        display: none;
+        position: absolute;
+        background-color: lightblue;
+        min-width: 160px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        box-shadow: 2px 2px 8px rgba(2, 2, 8, 0.5);
+    }
+
+    .site-link:hover + .dropdown {
+        display: block;
+    }
+
+    .dropdown-link {
+        display: block;
+        padding: 10px 30px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+
+    .dropdown-link:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    .has-dropdown:hover .dropdown {
+        display: block;
+    }
